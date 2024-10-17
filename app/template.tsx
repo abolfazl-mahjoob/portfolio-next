@@ -37,7 +37,7 @@ const Template = ({ children }: { children: ReactElement }) => {
             </div>
           </div>
           <div className="template-item-3">
-            <div className="overflow-auto h-full  flex flex-col">
+            <div className="overflow-auto h-full pr-2 flex flex-col">
               <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-bold">testimonial</h2>
                 <div className="bg-third rounded-md flex flex-col p-1 leading-6 text-white text-2xl font-black">
