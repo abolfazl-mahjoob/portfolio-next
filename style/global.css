@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link a::before {
+  transition: 0.3s;
+  content: "";
+  width: 7px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translate(100%);
+  right: 0;
+  background-image: url("/active.png");
+  transition-delay: 0.15s;
+}
+.nav-link .active-menu::before {
+  transform: translateY(-50%);
+}
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 15px;
+  flex-grow: 1;
+}
+.template-item-1 {
+  grid-area: 1 / 1 / 5 / 2;
+}
+.template-item-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.social a {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply bg-second;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #fff;
+  transition: 300ms;
+}
+.social a:hover {
+  @apply bg-main;
+}
+.template-item-3 {
+  grid-area: 6 / 1 / 8 / 2;
+}
+.template-item-4 {
+  grid-area: 1 / 2 / 8 / 3;
+}
+.template-grid > div {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+}

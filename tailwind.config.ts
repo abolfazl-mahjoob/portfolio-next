@@ -5,12 +5,17 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./template/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main: "#00ecb2",
+        second: "#4b566d",
+        third: "#96a3be",
+      },
+      fontSize: {
+        "2xs": "0.65rem",
       },
     },
   },
