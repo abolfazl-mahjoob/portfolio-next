@@ -36,6 +36,7 @@ const contactForm = async (previousState: unknown, formData: FormData) => {
     process.env.CSV_FILE_PATH || join(process.cwd(), "data", "output.csv");
 
   try {
+    await fs.mkdir(join(process.cwd(), "data"), { recursive: true });
     const fileExists = await fs
       .stat(filePath)
       .then(() => true)
