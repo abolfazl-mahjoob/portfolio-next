@@ -3,7 +3,7 @@ import { PiHandWavingLight } from "react-icons/pi";
 
 function Hi() {
   return (
-    <div className="border border-slate-300 rounded-xl py-2 px-4 flex items-center gap-3 text-sm">
+    <div className="border border-slate-200 md:border-slate-300 rounded-xl py-2 px-4 flex items-center gap-3 text-xs md:text-sm">
       <Image
         className="rounded-full"
         height={35}

@@ -35,25 +35,25 @@ const listNav: ListNav = [
 ];
 
 function Navbar() {
+  const pathname = usePathname();
   const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {
-    const pathname = usePathname;
     setCurrentPage(pathname);
-  }, [currentPage]);
+  }, [pathname]);
 
   return (
-    <ul>
+    <ul className="my-3 tablet:my-0">
       {listNav.map((el) => (
         <li className="mb-1 nav-link" key={el.link}>
           <Link
             className={`${
               currentPage == el.link ? "text-main active-menu" : "text-white"
-            } flex text-xs items-center gap-3 py-2 px-7 transition-all duration-300 capitalize relative`}
+            } flex text-xs items-center gap-3 justify-center tablet:justify-start py-3 tablet:py-2 tablet:px-7 transition-all duration-300 capitalize relative`}
             href={el.link}
           >
-            <span className="text-lg">{el.icon}</span>
-            {el.title}
+            <span className="text-xl tablet:text-lg">{el.icon}</span>
+            <span className="hidden tablet:block">{el.title}</span>
           </Link>
         </li>
       ))}

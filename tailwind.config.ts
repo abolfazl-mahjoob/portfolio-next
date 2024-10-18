@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        tablet: "992px",
+      },
       colors: {
         main: "#00ecb2",
         second: "#4b566d",

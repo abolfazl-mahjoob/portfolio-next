@@ -1,0 +1,48 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 13px;
+}
+.gallery img:first-child {
+  grid-area: 1 / 1 / 2 / 3;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.gallery img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.poem {
+  padding: 15px;
+  border-radius: 10px;
+  background: #00ecb221;
+  font-style: italic;
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.poem p {
+  position: relative;
+  font-size: 1rem;
+}
+.poem span {
+  margin-top: 15px;
+  font-size: 0.7rem;
+}
+.poem svg {
+  position: absolute;
+  left: 0;
+  left: 0;
+  font-size: 6rem;
+  @apply text-main;
+  transform: translate(-7%, -42%);
+  opacity: 0.2;
+}

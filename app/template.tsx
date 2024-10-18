@@ -10,7 +10,7 @@ const Template = ({ children }: { children: ReactElement }) => {
   return (
     <div className="max-w-[1300px] w-full my-0 mx-auto px-0 py-5 flex flex-col gap-4 h-full">
       <Header />
-      <div className="flex gap-5 h-0 grow">
+      <div className="flex gap-5 h-auto md:h-0 grow">
         <Aside />
         <div className="template-grid">
           <div className="template-item-1">

@@ -1,0 +1,60 @@
+.group {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.group:first-child {
+  margin-top: 0;
+}
+
+.group > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expert-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.expert-item svg {
+  font-size: 2.1rem;
+}
+
+.expert-item > div {
+  flex-grow: 1;
+  background-color: #eaeaea;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.expert-item > div div {
+  @apply bg-second;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: 300ms;
+}
+
+.expert-item > div div:hover {
+  @apply bg-main;
+}
+
+.expert-item > div span {
+  color: #eaeaea;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  transition: 300ms;
+}
+
+.expert-item > div div:hover span {
+  @apply text-second;
+  font-weight: 700;
+}

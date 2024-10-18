@@ -1,0 +1,8 @@
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 0.8rem;
+}
